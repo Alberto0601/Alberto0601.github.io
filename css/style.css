@@ -1,26 +1,62 @@
+@font-face {
+    font-family: "Zelda Font";
+    src: url("../Fuentes/HyliaSerif.ttf");
+}
+
 body{
-    background-color: white;
+    background-color: rgb(241, 242, 237);
 }
 
 header{
-    color:white;
     text-align:center;
     font-size:15px;
     background-color:black;
-    padding:0;                  
-    margin:0;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera{
+    display: inline;
+}
+
+#imgZelda{
+    width:16.5px;
+}
+
+#imgLink{
+    width: 20px;
+}
+
+#titulo{
+    margin-top: 0;
+    font-family: Zelda Font;
+}
+
+#colorTitulo{
+   color:rgb(183, 158, 103);
 }
 
 ol{
     font-size: 0;
     padding: 0;
-    margin-top:10px;
+    margin-top: 10px;
 }
-li{
+.menu{
     display:inline-block;
-    width: 32.9%;
+    width: 25%;
     font-size: 16px;
     text-align: center;
+}
+
+#titulo2Principal{
+    text-align: center;
+    font-family: Zelda Font;
+    color:rgb(196, 54, 45);
+}
+
+#titulo3Principal{
+    text-align: center;
+    font-family: Zelda Font;
 }
 
 a{
@@ -28,5 +64,8 @@ a{
     text-decoration: none;
 }
 
-
+footer{
+    color: black;
+    text-align: center;
+}
 
