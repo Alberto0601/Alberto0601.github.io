@@ -3,6 +3,11 @@
     src: url("../Fuentes/HyliaSerif.ttf");
 }
 
+@font-face{
+    font-family: "FuenteFF";
+    src: url("../Fuentes/finalf.ttf");
+}
+
 body{
     background-color: rgb(241, 242, 237);
 }
@@ -48,6 +53,14 @@ ol{
     text-align: center;
 }
 
+.enlaceMenu{
+    color:white;
+}
+
+a{
+    text-decoration: none;
+}
+
 #titulo2Principal{
     text-align: center;
     font-family: Zelda Font;
@@ -59,13 +72,82 @@ ol{
     font-family: Zelda Font;
 }
 
-a{
-    color:white;
-    text-decoration: none;
+#tituloSilksong{
+    font-family: FuenteFF;
+    font-size: 25px;
+    color: rgb(85, 29, 32);
+}
+
+.articuloPagPrincipal{              
+    margin: 25px;
+}
+
+.imagenesPrinc{
+    width: 250px;
+}
+
+#centrar{
+    margin: 0 auto;
+    width: 80%;
+}
+
+#seccion1{
+    width: 100%;
+    float: left;
+}
+
+.articuloJuegos{
+    width: 100%;
+    min-height: 224px;
+    float: left;
+}
+
+.tituloEimagenJuego{
+    width: 25%;
+    float: left;
+}
+
+.cajaReviews{
+    width: 75%;
+    float: left;
+}
+
+.reviewAutor{
+    width: 100%;
+    float: left;
+}
+
+.likeOdislike{
+    width: 20%;
+    float: left;
+} 
+
+.imagenLoD{
+    width: 120px;
+}
+
+.logos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*lo muevo un 50% del grande de la caja*/
+}
+
+.userYrev{
+    width: 70%;
+    float: left;
+}
+
+.logoPlataforma{
+    width: 10%;
+    min-height: 50px;
+    position: relative;
+    float: left;
 }
 
 footer{
     color: black;
     text-align: center;
 }
+
 
