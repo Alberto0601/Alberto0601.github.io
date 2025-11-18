@@ -1,3 +1,5 @@
+Sitemap: https://alberto0601.github.io/sitemap.xml
 User-agent:*
 Allow:/
-Sitemap: https://alberto0601.github.io/sitemap.xml
+
+
