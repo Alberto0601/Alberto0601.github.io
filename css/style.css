@@ -15,7 +15,7 @@ body{
 header{
     text-align:center;
     font-size:15px;
-    background-color:black;
+    background-color: black;
     margin: 0;
     padding: 0;
 }
@@ -71,11 +71,6 @@ a{
     text-align: center;
     font-family: Zelda Font;
     color:rgb(196, 54, 45);
-}
-
-#titulo3Principal{
-    text-align: center;
-    font-family: Zelda Font;
 }
 
 #tituloSilksong{
@@ -159,4 +154,12 @@ footer{
     min-height: 1px;
 }
 
+.enlacesExt{
+    margin-bottom: 10px;
+    display: block;
+    color: black;
+}
 
+.titPagint{
+    text-align: center;
+}
