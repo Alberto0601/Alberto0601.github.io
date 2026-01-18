@@ -9,13 +9,14 @@
 }
 
 body{
-    background-color: rgb(241, 242, 237);
+    background-color: #0d0d0d; /*Añadidos nuevos, antes tenia aqui el color blanquecino ese*/
+    color: #EAEAEA;
 }
 
 header{
     text-align:center;
     font-size:15px;
-    background-color: black;
+    background-color: #121214;
     margin: 0;
     padding: 0;
 }
@@ -48,7 +49,7 @@ ol{
 }
 .menu{
     display:inline-block;
-    width: 25%;
+    width: 20%;
     height: 30px;
     line-height: 30px;
     font-size: 16px;
@@ -56,7 +57,7 @@ ol{
 }
 
 .menu:hover{
-    background-color: rgb(207, 79, 79)
+    background-color: #F44336; /*Nuevo color hover*/
 }
 
 .enlaceMenu{
@@ -85,6 +86,7 @@ a{
 
 .imagenesPrinc{
     width: 250px;
+    border-radius: 10px;
 }
 
 .centrar{
@@ -101,16 +103,22 @@ a{
     width: 100%;
     min-height: 224px;
     float: left;
+    border-radius: 12px; /*A partir de aqui son añadidos nuevos*/
+    margin: 20px;
+    padding: 20px 20px 50px 0px;
+    background-color: #1A1A1A; /*fin añadidos*/
 }
 
 .tituloEimagenJuego{
     width: 25%;
     float: left;
+    text-align: center;
 }
 
 .cajaReviews{
     width: 75%;
     float: left;
+    padding-top:20px;
 }
 
 .reviewAutor{
@@ -125,6 +133,7 @@ a{
 
 .imagenLoD{
     width: 120px;
+    border-radius: 10px;
 }
 
 .logos{
@@ -147,7 +156,7 @@ a{
 }
 
 footer{
-    color: black;
+    color: #EAEAEA;
     text-align: center;
     float: left;
     width: 100%;
@@ -157,9 +166,67 @@ footer{
 .enlacesExt{
     margin-bottom: 10px;
     display: block;
-    color: black;
+    color: #EAEAEA; /*puedo usar para el footer el estilo que tengo en el index, una caja para cada enlace o hacer lo de que se muevan*/
 }
 
 .titPagint{
     text-align: center;
 }
+
+/*estilo del silo*/
+
+.titSilo{
+    text-align: center;
+    color: rgb(183, 158, 103);
+    margin: 0;
+    padding: 0;
+}
+
+.encSilo{
+    width: 100%;
+    min-height: 10px;
+    margin: 0;
+}
+
+.enlacSilo{
+    text-decoration: none;
+    color: inherit;      
+}
+
+.movEnlac{
+    margin-left: 190px;
+    text-align: left;
+}
+
+.enlacSilo:hover{
+    color: #F44336;
+}
+
+.seccSilo{
+    width: 100%;
+    min-height: 10px;
+    float: left;
+}
+
+.claseArtSilo{
+    width: 100%;
+    display: flex; /*los hijos del article se van a displayear por los ejes X e Y (horizontal y vertical)*/
+    align-items: center; /*esto controla la alineación del eje Y (vertical), y por ende se queda centrado*/
+    float: left;
+    min-height: 10px;
+}
+
+.cajTextSilo{
+    width: 90%;
+    float: left;
+    padding-right: 25px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.imgSilo{
+    width: 10%;
+    float: left;
+    border-radius: 10px;
+}
+
