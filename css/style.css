@@ -85,7 +85,7 @@ a{
 }
 
 .imagenesPrinc{
-    width: 250px;
+    width: 80%;
     border-radius: 10px;
 }
 
@@ -132,7 +132,7 @@ a{
 } 
 
 .imagenLoD{
-    width: 120px;
+    width: 55%;
     border-radius: 10px;
 }
 
@@ -140,6 +140,7 @@ a{
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 50%;
     transform: translate(-50%,-50%); /*lo muevo un 50% del grande de la caja*/
 }
 
@@ -176,16 +177,10 @@ footer{
 /*estilo del silo*/
 
 .titSilo{
+    margin-top: 15px;
+    font-family: Zelda Font;
     text-align: center;
-    color: rgb(183, 158, 103);
-    margin: 0;
-    padding: 0;
-}
-
-.encSilo{
-    width: 100%;
-    min-height: 10px;
-    margin: 0;
+    color: rgb(77, 137, 71);
 }
 
 .enlacSilo{
@@ -194,7 +189,6 @@ footer{
 }
 
 .movEnlac{
-    margin-left: 190px;
     text-align: left;
 }
 
@@ -220,8 +214,7 @@ footer{
     width: 90%;
     float: left;
     padding-right: 25px;
-    box-sizing: border-box;
-    margin: 0px;
+    box-sizing: border-box; /*he quitado un margin 0*/
 }
 
 .imgSilo{
@@ -230,3 +223,16 @@ footer{
     border-radius: 10px;
 }
 
+#imgNavi{
+    width: 50px;
+}
+
+.linksSilo{
+    text-decoration:none;
+    color: rgb(77, 137, 71);
+}
+
+.gifFooter{
+    width: 80px;
+    border-radius: 10px;
+}
