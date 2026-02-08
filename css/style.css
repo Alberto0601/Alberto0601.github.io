@@ -3,52 +3,54 @@
     src: url("../fuentes/HyliaSerif.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "FuenteFF";
     src: url("../fuentes/finalf.ttf");
 }
 
-body{
-    background-color: #0d0d0d; /*Añadidos nuevos, antes tenia aqui el color blanquecino ese*/
+body {
+    background-color: #0d0d0d;
+    /*Añadidos nuevos, antes tenia aqui el color blanquecino ese*/
     color: #EAEAEA;
 }
 
-header{
-    text-align:center;
-    font-size:15px;
+header {
+    text-align: center;
+    font-size: 15px;
     background-color: #121214;
     margin: 0;
     padding: 0;
 }
 
-.cabecera{
+.cabecera {
     display: inline;
 }
 
-#imgZelda{
-    width:16.5px;
+#imgZelda {
+    width: 16.5px;
 }
 
-#imgLink{
+#imgLink {
     width: 20px;
 }
 
-#titulo{
+#titulo {
     margin-top: 0;
     font-family: Zelda Font;
 }
 
-#colorTitulo{
-   color:rgb(183, 158, 103);
+#colorTitulo {
+    color: rgb(183, 158, 103);
 }
 
-ol{
+ol {
     font-size: 0;
     padding: 0;
     margin-top: 10px;
 }
-.menu{
-    display:inline-block;
+
+.menu {
+    display: inline-block;
     width: 20%;
     height: 30px;
     line-height: 30px;
@@ -56,107 +58,111 @@ ol{
     text-align: center;
 }
 
-.menu:hover{
-    background-color: #F44336; /*Nuevo color hover*/
+.menu:hover {
+    background-color: #F44336;
+    /*Nuevo color hover*/
 }
 
-.enlaceMenu{
-    color:white;
+.enlaceMenu {
+    color: white;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-#titulo2Principal{
+#titulo2Principal {
     text-align: center;
     font-family: Zelda Font;
-    color:rgb(196, 54, 45);
+    color: rgb(196, 54, 45);
 }
 
-#tituloSilksong{
+#tituloSilksong {
     font-family: FuenteFF;
     font-size: 25px;
     color: rgb(85, 29, 32);
 }
 
-.articuloPagPrincipal{              
+.articuloPagPrincipal {
     margin: 25px;
 }
 
-.imagenesPrinc{
+.imagenesPrinc {
     width: 80%;
     border-radius: 10px;
 }
 
-.centrar{
+.centrar {
     margin: 0 auto;
     width: 80%;
 }
 
-#seccion1{
+#seccion1 {
     width: 100%;
     float: left;
 }
 
-.articuloJuegos{
+.articuloJuegos {
     width: 100%;
     min-height: 224px;
     float: left;
-    border-radius: 12px; /*A partir de aqui son añadidos nuevos*/
+    border-radius: 12px;
+    /*A partir de aqui son añadidos nuevos*/
     margin: 20px;
     padding: 20px 20px 50px 0px;
-    background-color: #1A1A1A; /*fin añadidos*/
+    background-color: #1A1A1A;
+    /*fin añadidos*/
 }
 
-.tituloEimagenJuego{
+.tituloEimagenJuego {
     width: 25%;
     float: left;
     text-align: center;
 }
 
-.cajaReviews{
+.cajaReviews {
     width: 75%;
     float: left;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
-.reviewAutor{
+.reviewAutor {
     width: 100%;
     float: left;
 }
 
-.likeOdislike{
+.likeOdislike {
     width: 20%;
     float: left;
-} 
+}
 
-.imagenLoD{
+.imagenLoD {
     width: 55%;
     border-radius: 10px;
 }
 
-.logos{
+.logos {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 50%;
-    transform: translate(-50%,-50%); /*lo muevo un 50% del grande de la caja*/
+    transform: translate(-50%, -50%);
+    /*lo muevo un 50% del grande de la caja*/
 }
 
-.userYrev{
+.userYrev {
     width: 70%;
     float: left;
 }
 
-.logoPlataforma{
+.logoPlataforma {
     width: 10%;
     min-height: 50px;
     position: relative;
     float: left;
 }
 
-footer{
+footer {
     color: #EAEAEA;
     text-align: center;
     float: left;
@@ -164,75 +170,157 @@ footer{
     min-height: 1px;
 }
 
-.enlacesExt{
+.enlacesExt {
     margin-bottom: 10px;
     display: block;
-    color: #EAEAEA; /*puedo usar para el footer el estilo que tengo en el index, una caja para cada enlace o hacer lo de que se muevan*/
+    color: #EAEAEA;
+    /*puedo usar para el footer el estilo que tengo en el index, una caja para cada enlace o hacer lo de que se muevan*/
 }
 
-.titPagint{
+.titPagint {
     text-align: center;
 }
 
 /*estilo del silo*/
 
-.titSilo{
+.titSilo {
     margin-top: 15px;
     font-family: Zelda Font;
     text-align: center;
     color: rgb(77, 137, 71);
 }
 
-.enlacSilo{
+.enlacSilo {
     text-decoration: none;
-    color: inherit;      
+    color: inherit;
 }
 
-.movEnlac{
+.movEnlac {
     text-align: left;
 }
 
-.enlacSilo:hover{
+.enlacSilo:hover {
     color: #F44336;
 }
 
-.seccSilo{
+.seccSilo {
     width: 100%;
     min-height: 10px;
     float: left;
 }
 
-.claseArtSilo{
+.claseArtSilo {
     width: 100%;
-    display: flex; /*los hijos del article se van a displayear por los ejes X e Y (horizontal y vertical)*/
-    align-items: center; /*esto controla la alineación del eje Y (vertical), y por ende se queda centrado*/
+    display: flex;
+    /*los hijos del article se van a displayear por los ejes X e Y (horizontal y vertical)*/
+    align-items: center;
+    /*esto controla la alineación del eje Y (vertical), y por ende se queda centrado*/
     float: left;
     min-height: 10px;
 }
 
-.cajTextSilo{
+.cajTextSilo {
     width: 90%;
     float: left;
     padding-right: 25px;
-    box-sizing: border-box; /*he quitado un margin 0*/
+    box-sizing: border-box;
+    /*he quitado un margin 0*/
 }
 
-.imgSilo{
+.imgSilo {
     width: 10%;
     float: left;
     border-radius: 10px;
 }
 
-#imgNavi{
+#imgNavi {
     width: 50px;
 }
 
-.linksSilo{
-    text-decoration:none;
+.linksSilo {
+    text-decoration: none;
     color: rgb(77, 137, 71);
 }
 
-.gifFooter{
+.gifFooter {
     width: 80px;
     border-radius: 10px;
+}
+
+/*estilo formulario inicio sesión index*/
+
+@keyframes slide {
+
+                        /*declarar una animación que la he llamado slide*/
+    from {
+                        /*posición inicial de la animación al principio*/
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+                        /*posición final de la animación*/
+    }
+}
+
+#titForm {
+    text-align: left;
+    float: left;
+    width: 90%;
+    padding-left: 120px;
+    box-sizing: border-box;
+    color: #dee2e6;
+}
+
+#cajaForm {
+    width: 20%;
+    min-height: 270px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: slide;
+    /*llamo a la animación*/
+    animation-duration: 1s;
+    /*duración animación*/
+}
+
+.labelForm {
+    display: block;
+    margin-top: 5px;
+    color: #dee2e6;
+    text-align: center;
+    font-size: 20px;
+}
+
+.inputForm {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /*left mueve la caja a la mitad del tamaño del padre, esto hace que se mueva en funcion del tamaño del mismo*/
+    width: 65%;
+    height: 30px;
+}
+
+#buttonForm {
+    display: block;
+    margin: 0px auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #1a73e8;
+    color: white;
+    width: 70%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#cierre {
+    float: left;
+    width: 10%;
+    color: #dee2e6;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
 }
