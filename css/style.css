@@ -324,3 +324,39 @@ footer {
     font-size: 20px;
     cursor: pointer;
 }
+
+/*CSS de la página de novedades*/
+
+.titNov{
+    text-align: center;
+}
+
+.seccNov{
+    display: flex;
+    flex-wrap: wrap; /*para que se ponga debajo*/
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.artNov{
+    flex: 0 0 calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1A1A1A;
+    border-radius: 12px;
+    min-height: 500px;
+}
+
+.imgNov{
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.infoNov{
+    margin: 25px;
+}
