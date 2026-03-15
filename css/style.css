@@ -426,7 +426,7 @@ footer {
         position: absolute;
         background-color: #121214;
         display: none;
-        width: 25%;
+        width: 35%;
     }
     #iconoMenuDesplegable{
         display: block;
@@ -441,5 +441,8 @@ footer {
     }
     #iconoOculto:checked ~ #iconoMenuDesplegable{
         background-color: #1A1A1A;
+    }
+    .menu{
+        height: 50px;
     }
 }
