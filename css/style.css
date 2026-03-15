@@ -42,13 +42,14 @@ header {
 #colorTitulo {
     color: rgb(183, 158, 103);
 }
+
 /*menú*/
 
-#iconoOculto{
+#iconoOculto {
     display: none;
 }
 
-#iconoMenuDesplegable{
+#iconoMenuDesplegable {
     display: none;
 }
 
@@ -261,15 +262,15 @@ footer {
 
 @keyframes slide {
 
-                        /*declarar una animación que la he llamado slide*/
+    /*declarar una animación que la he llamado slide*/
     from {
-                        /*posición inicial de la animación al principio*/
+        /*posición inicial de la animación al principio*/
         margin-left: 100%;
     }
 
     to {
         margin-left: 0%;
-                        /*posición final de la animación*/
+        /*posición final de la animación*/
     }
 }
 
@@ -337,19 +338,20 @@ footer {
 
 /*CSS de la página de novedades*/
 
-.titNov{
+.titNov {
     text-align: center;
 }
 
-.seccNov{
+.seccNov {
     display: flex;
-    flex-wrap: wrap; /*para que se ponga debajo*/
+    flex-wrap: wrap;
+    /*para que se ponga debajo*/
     gap: 20px;
     align-items: center;
     margin-top: 40px;
 }
 
-.artNov{
+.artNov {
     flex: 0 0 calc(50% - 10px);
     display: flex;
     flex-direction: column;
@@ -359,7 +361,7 @@ footer {
     min-height: 500px;
 }
 
-.imgNov{
+.imgNov {
     border-radius: 10px;
     width: 50%;
     position: relative;
@@ -367,18 +369,18 @@ footer {
     transform: translateX(-50%);
 }
 
-.infoNov{
+.infoNov {
     margin: 25px;
 }
 
 /*CSS de la página de Análisis y reseñas*/
 
-.titReseAnalisis{
+.titReseAnalisis {
     text-align: center;
     margin-top: 40px;
 }
 
-.artReseAnalisis{
+.artReseAnalisis {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -386,24 +388,28 @@ footer {
     background-color: #1A1A1A;
 }
 
-.analisisJuego{
+.analisisJuego {
     margin-left: 25px;
     margin-right: 25px;
     font-size: 17px;
 }
 
-.imgReseAnalisis{
+.imgReseAnalisis {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 25px;
     margin-right: 25px;
 }
 
-.tituloUsuResenyas{
+.imgTamanyo{
+    border-radius: 12px;
+}
+
+.tituloUsuResenyas {
     text-align: center;
 }
 
-.reseAnalisisUsu{
+.reseAnalisisUsu {
     width: 100%;
     display: flex;
     gap: 25px;
@@ -411,7 +417,7 @@ footer {
     border-radius: 12px;
 }
 
-.cajaResAnalisis{
+.cajaResAnalisis {
     width: 50%;
     background-color: #1A1A1A;
     padding: 15px;
@@ -420,29 +426,75 @@ footer {
 
 /*Media Query*/
 
-@media screen and (max-width: 1160px){
-    .menuFlex{
+@media screen and (max-width: 1160px) {
+
+    /*MENÚ*/
+    .menuFlex {
         flex-direction: column;
         position: absolute;
+        top: 80px;
         background-color: #121214;
         display: none;
         width: 35%;
+        box-sizing: border-box;
+        border: 1px solid #dee2e6;
+        border-radius: 15px;
+        height: 260px;
+        z-index: 1;
     }
-    #iconoMenuDesplegable{
+
+    #iconoMenuDesplegable {
         display: block;
         margin-left: 20px;
         width: 50px;
     }
-    #iconoOculto:checked ~ .menuFlex{
+
+    #iconoOculto:checked~.menuFlex {
         display: block;
     }
-    #navMenu{
+
+    #navMenu {
         text-align: left;
     }
-    #iconoOculto:checked ~ #iconoMenuDesplegable{
+
+    #iconoOculto:checked~#iconoMenuDesplegable {
         background-color: #1A1A1A;
     }
-    .menu{
-        height: 50px;
+
+    .menu {
+        height: 52px;
+        border-radius: 15px;
     }
+
+    /*PÁGINA NOVEDADES*/
+
+    .artNov {
+        flex: 0 0 100%;
+    }
+
+    /*PÁGINA ANÁLISIS Y RESEÑAS*/
+
+    .artReseAnalisis {
+        flex-direction: column;
+    }
+
+    .imgReseAnalisis{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgTamanyo {
+        width: 50%;
+        
+    }
+
+    .reseAnalisisUsu{
+        flex-direction: column;
+    }
+    .cajaResAnalisis{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
 }
