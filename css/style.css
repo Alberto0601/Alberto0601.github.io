@@ -44,6 +44,14 @@ header {
 }
 /*menú*/
 
+#iconoOculto{
+    display: none;
+}
+
+#iconoMenuDesplegable{
+    display: none;
+}
+
 .menuFlex {
     display: flex;
     list-style-type: none;
@@ -410,4 +418,28 @@ footer {
     border-radius: 12px;
 }
 
+/*Media Query*/
 
+@media screen and (max-width: 1160px){
+    .menuFlex{
+        flex-direction: column;
+        position: absolute;
+        background-color: #121214;
+        display: none;
+        width: 25%;
+    }
+    #iconoMenuDesplegable{
+        display: block;
+        margin-left: 20px;
+        width: 50px;
+    }
+    #iconoOculto:checked ~ .menuFlex{
+        display: block;
+    }
+    #navMenu{
+        text-align: left;
+    }
+    #iconoOculto:checked ~ #iconoMenuDesplegable{
+        background-color: #1A1A1A;
+    }
+}
