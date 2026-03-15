@@ -42,16 +42,18 @@ header {
 #colorTitulo {
     color: rgb(183, 158, 103);
 }
+/*menú*/
 
-ol {
+.menuFlex {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
     font-size: 0;
     padding: 0;
     margin-top: 10px;
 }
 
 .menu {
-    display: inline-block;
-    width: 20%;
     height: 30px;
     line-height: 30px;
     font-size: 16px;
@@ -60,10 +62,10 @@ ol {
 
 .menu:hover {
     background-color: #F44336;
-    /*Nuevo color hover*/
 }
 
 .enlaceMenu {
+    width: 20%;
     color: white;
 }
 
@@ -360,3 +362,52 @@ footer {
 .infoNov{
     margin: 25px;
 }
+
+/*CSS de la página de Análisis y reseñas*/
+
+.titReseAnalisis{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.artReseAnalisis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #1A1A1A;
+}
+
+.analisisJuego{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+}
+
+.imgReseAnalisis{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.tituloUsuResenyas{
+    text-align: center;
+}
+
+.reseAnalisisUsu{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    border-radius: 12px;
+}
+
+.cajaResAnalisis{
+    width: 50%;
+    background-color: #1A1A1A;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+
