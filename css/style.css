@@ -498,3 +498,17 @@ footer {
     }
 
 }
+
+@media screen and (max-width: 480px) {
+
+.menuFlex {
+        width: 50%;
+        top: 110px;
+}
+
+#titulo {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+}
