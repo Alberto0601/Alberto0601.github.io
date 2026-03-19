@@ -120,8 +120,10 @@ a {
     width: 100%;
     min-height: 224px;
     border-radius: 12px;
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 20px 20px 50px 0px;
+    box-sizing: border-box;
     background-color: #1A1A1A;
 }
 
@@ -178,7 +180,10 @@ a {
 footer {
     color: #EAEAEA;
     text-align: center;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     min-height: 1px;
 }
@@ -467,6 +472,30 @@ footer {
         border-radius: 15px;
     }
 
+    /*INDEX*/
+
+    .tituloEimagenJuego{
+        width: 80%;
+    }
+
+    .imagenesPrinc{
+        max-width: 70%;
+    }
+
+    .articuloJuegos{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .likeOdislike{
+        display: none;
+    }
+
+    .logoPlataforma{
+        display: none;
+    }
+
     /*PÁGINA NOVEDADES*/
 
     .artNov {
@@ -498,11 +527,19 @@ footer {
         box-sizing: border-box;
     }
 
+    /*FOOTER*/
+
+    footer p{
+        width: 80%;
+    }
+
 }
 
 /*Media query 480*/
 
 @media screen and (max-width: 480px) {
+
+/*MENU EN 480*/
 
 .menuFlex {
         width: 50%;
@@ -512,6 +549,12 @@ footer {
 #titulo {
     display: inline-block;
     margin-top: 10px;
+}
+
+/*INDEX EN 480 */
+
+.userYrev{
+    width: 100%;
 }
 
 }
