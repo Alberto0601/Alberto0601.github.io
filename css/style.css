@@ -110,67 +110,69 @@ a {
 
 #seccion1 {
     width: 100%;
-    float: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .articuloJuegos {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     min-height: 224px;
-    float: left;
     border-radius: 12px;
-    /*A partir de aqui son añadidos nuevos*/
     margin: 20px;
     padding: 20px 20px 50px 0px;
     background-color: #1A1A1A;
-    /*fin añadidos*/
 }
 
 .tituloEimagenJuego {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 25%;
-    float: left;
     text-align: center;
 }
 
 .cajaReviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 75%;
-    float: left;
     padding-top: 20px;
 }
 
 .reviewAutor {
     width: 100%;
-    float: left;
 }
 
 .likeOdislike {
     width: 20%;
-    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .imagenLoD {
     width: 55%;
+    flex: 0.05 0 55%;
+    flex-shrink: 0;
     border-radius: 10px;
 }
 
 .logos {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 50%;
-    transform: translate(-50%, -50%);
-    /*lo muevo un 50% del grande de la caja*/
 }
 
 .userYrev {
     width: 70%;
-    float: left;
 }
 
 .logoPlataforma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 10%;
     min-height: 50px;
-    position: relative;
-    float: left;
 }
 
 footer {
@@ -185,7 +187,6 @@ footer {
     margin-bottom: 10px;
     display: block;
     color: #EAEAEA;
-    /*puedo usar para el footer el estilo que tengo en el index, una caja para cada enlace o hacer lo de que se muevan*/
 }
 
 .titPagint {
@@ -498,6 +499,8 @@ footer {
     }
 
 }
+
+/*Media query 480*/
 
 @media screen and (max-width: 480px) {
 
