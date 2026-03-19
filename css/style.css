@@ -533,6 +533,16 @@ footer {
         width: 80%;
     }
 
+    /*SILO*/
+    
+    .cajTextSilo{
+        width: 100%;
+    }
+
+    .claseArtSilo img{
+        display: none;
+    }
+
 }
 
 /*Media query 480*/
