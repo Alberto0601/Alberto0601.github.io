@@ -91,7 +91,7 @@ a {
 #tituloSilksong {
     font-family: FuenteFF;
     font-size: 25px;
-    color: rgb(85, 29, 32);
+    color: rgb(189, 82, 87);
 }
 
 .articuloPagPrincipal {
@@ -296,6 +296,7 @@ footer {
     border-radius: 10px;
     display: none;
     position: fixed;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     animation-name: slide;
