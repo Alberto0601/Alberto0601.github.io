@@ -88,7 +88,7 @@ a {
     color: rgb(196, 54, 45);
 }
 
-#tituloSilksong {
+.tituloJuego {
     font-family: FuenteFF,'Times New Roman';
     font-size: 25px;
     color: rgb(189, 82, 87);
@@ -262,85 +262,6 @@ footer {
 .gifFooter {
     width: 80px;
     border-radius: 10px;
-}
-
-/*estilo formulario inicio sesión index*/
-
-@keyframes slide {
-
-    /*declarar una animación que la he llamado slide*/
-    from {
-        /*posición inicial de la animación al principio*/
-        margin-left: 100%;
-    }
-
-    to {
-        margin-left: 0%;
-        /*posición final de la animación*/
-    }
-}
-
-#titForm {
-    text-align: left;
-    float: left;
-    width: 90%;
-    padding-left: 120px;
-    box-sizing: border-box;
-    color: #dee2e6;
-}
-
-#cajaForm {
-    width: 380px;
-    min-height: 270px;
-    background-color: #212529;
-    border-radius: 10px;
-    display: none;
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    animation-name: slide;
-    /*llamo a la animación*/
-    animation-duration: 1s;
-    /*duración animación*/
-}
-
-.labelForm {
-    display: block;
-    margin-top: 5px;
-    color: #dee2e6;
-    text-align: center;
-    font-size: 20px;
-}
-
-.inputForm {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    /*left mueve la caja a la mitad del tamaño del padre, esto hace que se mueva en funcion del tamaño del mismo*/
-    width: 65%;
-    height: 30px;
-}
-
-#buttonForm {
-    display: block;
-    margin: 0px auto;
-    margin-top: 10px;
-    border-radius: 10px;
-    background-color: #1a73e8;
-    color: white;
-    width: 70%;
-    font-size: 20px;
-    padding: 10px;
-}
-
-#cierre {
-    float: left;
-    width: 10%;
-    color: #dee2e6;
-    font-weight: bolder;
-    font-size: 20px;
-    cursor: pointer;
 }
 
 /*CSS de la página de novedades*/
